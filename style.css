@@ -7,17 +7,31 @@
 }
 
 body {
-    min-height: 100vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     background-color: #2c2c3c;
     font-family: 'Asap', sans-serif;
 }
 
+.header-quote {
+    height: 60px;
+    padding: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 20px #36d8e4;
+}
+
+section {
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    max-width: 400px;
+}
+
 .progress-bar {
     width: 40px;
-    height: 85vh;
+    height: 90%;
     background-color: #237563;
     border-radius: 50px;
     position: relative;
@@ -25,7 +39,7 @@ body {
 
 .progress-bar #indicator {
     width: 100%;
-    height: 30%;
+    height: auto;
     background-color: #70d4be;
     border-radius: 50px;
     position: absolute;
@@ -33,17 +47,21 @@ body {
 }
 
 .info {
-    height: 85vh;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.info #days {
+.info .num {
     color: #bb76fc;
     font-weight: 700;
-    font-size: 90px;
+    font-size: 48px;
+    margin-right: 10px;
 }
 
 .info .sub-text {
     color: #cf6679;
     font-weight: 500;
-    font-size: 48px;
+    font-size: 24px;
 }
